@@ -34,7 +34,7 @@
 .header {
     position: sticky;
     /* top: 0; */
-    background-color: rgb(210, 208, 207);
+    /* background-color: rgb(210, 208, 207); */
     padding: 5px 20px 5px 40px;
     z-index: 2;
     font-family: 'Cera Pro', sans-serif;
@@ -49,6 +49,8 @@
 }
 .header__content-logo{
     display: flex;
+    width: 124px;
+    justify-content: center;
 }
 .header__content-logo img{
     display: none;
@@ -76,11 +78,11 @@ a {
     background-color: #fff;
     display: inline-block;
     width: 150px;
-    padding: 12px 10px;
+    padding: 12px 4px;
     text-align: center;
-    color: #000000;
     border-radius: 50px;
     border: none;
+    /* border: 1px solid #313131; */
     cursor: pointer;
     font-weight: normal;
     font-size: 14px;
@@ -88,6 +90,9 @@ a {
     font-weight: normal;
     letter-spacing: 1px;
     margin: 10px 0px;
+}
+.header__button a{
+    color: #313131;
 }
 /* Hero */
 .hero{
@@ -101,32 +106,91 @@ a {
     flex-flow: row; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 30px;
+    gap: 20px;
     top: 0;
     justify-items: center;
-    height: 550px;
+    height: 520px;
 }
-.hero__image-1{
+.hero__image-container1{
+    position: relative;
+    align-self: end;
+    overflow: hidden;
+}
+.hero__image-container1__overlay {
+    position: absolute;
+    top: 250px;
+    width: 240px;
+    height: auto;
+    /* transition: 1s; */
+    /* animation: moveup 2s infinite ; */
+    /* animation-delay: 5s; */
+    /* animation-iteration-count: 6; */
+}
+@keyframes moveup {
+    from {bottom: 250px;}
+    to {top: 0px;}
+}
+.hero__image-container1:hover .hero__image-container1__overlay {
+    transition: 1.5s;
+    top: 0;
+}
+.hero__image-container1__1{
     align-self: end;
     order: 1;
     max-width: 240px;
     /* width: 100%;
     height: auto; */
 }
-.hero__image-2{
+.hero__image-container2{
+    position: relative;
+    align-self: end;
+    overflow: hidden;
+    order: 2;
+}
+.hero__image-container2__overlay {
+    position: absolute;
+    bottom: 460px;
+    /* width: 900px;
+    height: auto; */
+    transition: 1s;
+  }
+.hero__image-container2:hover .hero__image-container2__overlay {
+    transition: 1.5s;
+    bottom: 0;
+}
+.hero__image-container2__2{
     order: 2;
     position: relative;
     height: 453.72px;
     align-self: end;
     object-fit: cover;
+    overflow: hidden;
 }
-.hero__image-2 img{
+.hero__image-container2__2 img{
     max-width: 900px;
     object-fit: cover;
-    /* width: 100% ; */
+    width: 100% ;
     height: 453.72px;
+    overflow: hidden;
 }
-.hero__image-3{
+.hero__image-container3{
+    position: relative;
+    align-self: start;
+    overflow: hidden;
+    order: 3;
+}
+.hero__image-container3__overlay {
+    position: absolute;
+    top: 310px;
+    width: 240px;
+    height: auto;
+    transition: 1s;
+  }
+.hero__image-container3:hover .hero__image-container3__overlay {
+    transition: 1.5s;
+    top: 0;
+}
+.hero__image-container3__3{
     align-self: start;
     order: 3;
     max-width: 240px;
@@ -204,12 +268,38 @@ a {
     font-size: 36px;
     font-weight: normal;
 }
+/* #animation1{
+    animation: slide_up 1.4s ease;
+    animation-delay: 10s;
+}
+#animation2{
+    animation: slide_up 1.6s ease;
+    animation-delay: 10s;
+}
+#animation3{
+    animation: slide_up 1.9s ease;
+    animation-delay: 10s;
+}
+#animation4{
+    animation: slide_up 2.2s ease;
+    animation-delay: 10s;
+} */
 .value__title-2{
     text-align: center;
     font-size: 80px;
     font-family: 'Halbrein';
     font-weight: normal;
+    animation: slide_up 3s ease;
+    /* animation-delay: 10s; */
 }
+/* @keyframes slide_up{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+} */
 /* OBJECTIVE */
 .objective{
     display: grid;
@@ -856,19 +946,19 @@ a {
         /* height: 590px; */
         grid-template-columns: 1fr 2fr 1fr;
     }
-    .hero__image-3{
+    .hero__image-container3{
         max-width: 210px;
         object-fit: cover;
     }
-    .hero__image-1{
+    .hero__image-container1{
         max-width: 210px;
         object-fit: cover;
     }
-    .hero__image-2{
+    .hero__image-container2{
         align-self: end;
         height: 453.72px;
     }
-    .hero__image-2 img{
+    .hero__image-container2 img{
         max-width: 800px;
         object-fit: cover;
         width: 100% ;
@@ -957,24 +1047,24 @@ a {
         gap: 15px;
     }
     .hero__image{
-        height: 590px;
+        height: 520px;
         grid-template-columns: 1fr 2fr 1fr;
     }
-    .hero__image-3{
+    .hero__image-container3{
         /* display: flex; */
         max-width: 180px;
         object-fit: cover;
     }
-    .hero__image-1{
+    .hero__image-container1{
         /* display: flex; */
         max-width: 180px;
         object-fit: cover;
     }
-    .hero__image-2{
+    .hero__image-container2{
         align-self: end;
-        height: 520px;
+        height: 454px;
     }
-    .hero__image-2 img{
+    .hero__image-container2 img{
         max-width: 520px;
         height: 520px;
         object-fit: cover;
@@ -1098,18 +1188,18 @@ a {
         grid-template-columns: repeat(1, 1fr);
         height: 610px;
     }
-    .hero__image-3{
+    .hero__image-container3{
         display: none;
     }
-    .hero__image-1{
+    .hero__image-container1{
         display: none;
     }
-    .hero__image-2{
+    .hero__image-container2{
         height: 610px;
         /* padding-top: 70px; */
         align-self: end;
     }
-    .hero__image-2 img{
+    .hero__image-container2 img{
         max-width: 520px;
         height: 610px;
         object-fit: cover;
@@ -1231,13 +1321,13 @@ a {
     .hero__image{
         grid-template-columns: repeat(1, 1fr);
     }
-    .hero__image-3{
+    .hero__image-container3{
         display: none;
     }
-    .hero__image-1{
+    .hero__image-container1{
         display: none;
     }
-    .hero__image-2 img{
+    .hero__image-container2 img{
         max-width: 420px;
         height: 610px;
         object-fit: cover;
@@ -1350,16 +1440,16 @@ a {
     margin: auto;
     text-align: center;
     }
-    .hero__image-1{
+    .hero__image-container1{
         display: none;
     }
-    .hero__image-2 img{
+    .hero__image-container2 img{
         max-width: 280px;
         height: 610px;
         object-fit: cover;
         width: 100%;
     }
-    .hero__image-3{
+    .hero__image-container3{
         display: none;
     }
     .hero__tittle-large{

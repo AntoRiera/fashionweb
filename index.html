@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> D&D Design </title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -38,7 +40,7 @@
                 </ul>
              </nav>
              <button class="header__button">
-                <a href="./pages/log-in-register.html"> Log In </a>
+                <a href="./pages/log-in-register.html"> Register | Log In </a>
             </button>
         </div>
    </header>
@@ -51,13 +53,29 @@
                 <h2 class="hero__tittle-medium">it's how you feel in your clothes</h2>
             </div>
             <div class="hero__image">
-                <img src="./assets/image/accesories.jpg" alt="Hero accesories"  class="hero__image-1" />
-                <div class="hero__image-2">
-                    <img src="./assets/image/hero image 900.png" alt="Hero image fashion" />
-                    <iframe width="100" height="100" class="hero__video" src="https://www.youtube.com/embed/I10XB1-IIbA" title="View video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <button class="hero__button">VIEW VIDEO</button>
+                <div class="hero__image-container1">
+                    <img src="./assets/image/accesories.jpg" alt="Hero accesories"  class="hero__image-container1__1" />
+                    <div >
+                        <img src="./assets/image/accesories byn.jpg" alt="hover img" class="hero__image-container1__overlay">
+                    </div>
                 </div>
-                <img src="./assets/image/closet.jpg" alt="Hero closet" class="hero__image-3" />
+                <div class="hero__image-container2">
+                    <div class="hero__image-container2__2">
+                        <img src="./assets/image/hero image 900.png" alt="Hero image fashion" />
+                        <div >
+                            <img src="./assets/image/hero image 900 byn.png" alt="hover img" class="hero__image-container2__overlay">
+                        </div>
+                        <iframe width="100" height="100" class="hero__video" src="https://www.youtube.com/embed/I10XB1-IIbA" title="View video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <button class="hero__button">VIEW VIDEO</button>
+                    </div>
+                </div>
+                <div class="hero__image-container3">
+                    <img src="./assets/image/closet.jpg" alt="Hero closet" class="hero__image-container3__3" />
+                    <div >
+                        <img src="./assets/image/closet byn.jpg" alt="hover img" class="hero__image-container3__overlay">
+                    </div>
+                </div>
+
                 <div class="hero__contact">
                     <a href="./pages/contact-us.html">
                         <button class="hero__contact-button"> CONTACT US</button>
@@ -69,15 +87,17 @@
         </section>
         <!-- Our value proposal section -->
         <section class="value">
-            <h2 class="value__title-1">No money waste</h2>
-            <h2 class="value__title-1">No more hours thinking</h2>
-            <h2 class="value__title-1">No more unflattering clothes</h2>
-            <h2 class="value__title-1">No more having nothing to wear</h2>
-            <h1 class="value__title-2">Just what is needed</h1>
+            <!-- <div class="wow animate__animated animate__slideInUp animate__delay-3s"> -->
+                <h2 class="value__title-1 wow animate__animated animate__slideInUp animate__delay-0.9s">No money waste</h2>
+                <h2 class="value__title-1 wow animate__animated animate__slideInUp animate__delay-1.3s">No more hours thinking</h2>
+                <h2 class="value__title-1 wow animate__animated animate__slideInUp animate__delay-1.5s">No more unflattering clothes</h2>
+                <h2 class="value__title-1 wow animate__animated animate__slideInUp animate__delay-1.8s">No more having nothing to wear</h2>
+                <h1 class="value__title-2  wow animate__animated animate__slideInUp animate__delay-2.1s">Just what is needed</h1>
+            </div>
         </section>
         <!-- What we do - Get in touch section -->
         <section class="objective">
-            <img class="objective__img" src="./assets/image/pantone colors.jpg" alt="Clothes pantone" width="460 px">
+            <img class="objective__img wow animate__animated animate__zoomIn animate__delay-2.1s" src="./assets/image/pantone colors.jpg" alt="Clothes pantone" width="460 px">
             <div class="objective__text">
                 <h2>PERSONALIZE, CREATE & LIVE YOUR BODY</h2>
                 <p>We help you find your style, create every day looks & get to know your body from a global clothing perspective.</p>
@@ -127,5 +147,9 @@
        </section>
     </div>
    </footer>
+   <script src="./js/wow.min.js"></script>
+   <script>
+   new WOW().init();
+   </script>
 </body>
 </html>
