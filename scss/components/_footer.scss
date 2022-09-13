@@ -1,0 +1,220 @@
+/* FOOTER */
+.footer{
+    background-color: #313131;
+    bottom: 0;
+    padding: 20 30;
+    font-family: 'Cera Pro', sans-serif;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer__info{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    max-width: 1350px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    align-items: end;
+    gap: 100px;
+    justify-content: center;
+}
+/* .footer__info-location{
+    align-self: flex-end;
+    order: 2;
+    margin: 10px 80px;
+} */
+.footer__info-location h4{
+    font-family:'Cera Pro Bold', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.footer__info-location p{
+    font-family:'Cera Pro Light', sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 130px;
+}
+/* .footer__info-contact{
+    align-self: center;
+    order: 1;
+    margin: 80px 80px 10px 200px;
+} */
+.footer__info-contact h4{
+    font-family:'Cera Pro Bold', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.footer__info-contact p{
+    font-family:'Cera Pro Light', sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 130px;
+}
+/* .footer__logo{
+    margin: 40px 200px;
+    position: absolute;
+} */
+.socialmedia{
+    padding: 50px ;
+}
+.socialmedia__suscribe-email{
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.socialmedia__suscribe h5{
+    font-family: 'Cera Pro Light', sans-serif;
+    padding: 10px 0;
+    font-weight: normal;
+}
+::placeholder{
+    color: #fff;
+}
+.socialmedia__icons{
+    display: flex;
+    margin-top: 15px;
+}
+.socialmedia__icons h5{
+    padding-left: 20px;
+    font-family: 'Cera Pro Light', sans-serif;
+    font-weight: normal;
+}
+.socialmedia__icons-1{
+    padding: 0 25px;
+    width: 22px;
+    height: 22px;
+}
+.socialmedia__icons-2{
+    padding: 0 25px;
+    width: 22px;
+    height: 22px;
+}
+.socialmedia__icons-3{
+    padding: 0 25px;
+    width: 22px;
+    height: 22px;
+}
+// MEDIAS QUERIES
+@media(max-width:1024px){
+    .footer{
+        padding: 20px;
+    }
+    .footer__info{
+        gap: 30px;
+        padding: 20px;
+    }
+}
+@media(max-width:768px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .footer__info{
+        gap: 60px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .socialmedia__suscribe{
+        justify-content: center;
+        text-align: center;
+    }
+    .socialmedia__suscribe-email{
+        max-width: 350px;
+        width: 100%;
+    }
+    .socialmedia{
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .socialmedia__icons{
+        text-align: center;
+        justify-content: center;
+    }
+    .socialmedia__icons-1{
+        padding: 0;
+    }
+    .socialmedia__icons-2{
+        padding: 0 20px;
+    }
+    .socialmedia__icons-3{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:600px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .footer__info{
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .socialmedia__suscribe{
+        justify-content: center;
+        text-align: center;
+    }
+    .socialmedia__suscribe-email{
+        max-width: 350px;
+        width: 100%;
+    }
+    .socialmedia{
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .socialmedia__icons{
+        text-align: center;
+        justify-content: center;
+    }
+    .socialmedia__icons-1{
+        padding: 0;
+    }
+    .socialmedia__icons-2{
+        padding: 0 20px;
+    }
+    .socialmedia__icons-3{
+        padding: 0 20px;
+    }
+}
+@media(max-width:400px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .footer__info{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+    .socialmedia__suscribe-email{
+        max-width: 350px;
+        width: 100%;
+    }
+    .socialmedia{
+        padding: 20px;
+    }
+    .socialmedia__icons-1{
+        padding: 0 20px;
+    }
+    .socialmedia__icons-2{
+        padding: 0 20px;
+    }
+    .socialmedia__icons-3{
+        padding: 0 20px;
+    }
+}

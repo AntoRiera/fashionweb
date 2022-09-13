@@ -1,0 +1,22 @@
+{
+  "name": "fashion",
+  "version": "1.0.0",
+  "description": "Project design web",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoRiera/fashionweb.git"
+  },
+  "author": "Antonia Riera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoRiera/fashionweb/issues"
+  },
+  "homepage": "https://github.com/AntoRiera/fashionweb#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

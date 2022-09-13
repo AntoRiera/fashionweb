@@ -1,0 +1,130 @@
+.tendency-hero{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 100px;
+}
+.tendency-hero__text{
+    margin-left: 100px;
+    width: 450px;
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+}
+.tendency-hero__text h2{
+    font-size: 48px;
+    letter-spacing: 5%;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.tendency-hero__text p{
+    padding: 10px 0;
+    letter-spacing: 0.5%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 170%;
+}
+.tendency-hero__text-button{
+    background-color: #fff;
+    display: inline-block;
+    width: auto;
+    padding: 10px 40px;
+    text-align: center;
+    color: #313131;
+    border-radius: 50px;
+    border: 1px solid #313131;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Cera Pro Medium', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 40px 0;
+}
+.tendency-hero__images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    gap: 40px;
+}
+.tendency-moodboard{
+    background-color: #F3EEE8;
+    text-align: center;
+}
+.tendencyarticletext{
+    text-align: center;
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+    padding: 40px;
+}
+.tendencyarticletext h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.tendencyarticletext h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.tendencyarticle{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    column-gap: 140px;
+    row-gap: 40px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 350px;
+    padding: 50px;
+}
+.tendencyarticle__card{
+    display: grid;
+    grid-template-columns: 100px auto;
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    gap: 30px;
+    align-items: center;
+    text-align: left;
+}
+.tendencyarticle__card-title{
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+.tendencyarticle__card-subtitle{
+    line-height: 1.5;
+    font-weight: normal;
+    width: 300px;
+}
+.tendencyarticle__card-image{
+    width: 100px;
+}
+.tendency-profiles{
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+    margin: 30px 20px 80px;
+}
+.tendency-profiles h2{
+    font-size: 20px;
+    padding: 20px 20px 20px 260px;
+}
+.tendedncy-profiles__influencers{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+.tendedncy-profiles__arrow{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.tendency-profiles__row{
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+}

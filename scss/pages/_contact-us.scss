@@ -1,0 +1,156 @@
+.contact-page{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin: 80px 50px;
+    height: auto;
+}
+.contact-page__info{
+    background-color: #aeaeae;
+    padding: 40px;
+    max-width: 560px;
+    min-width: 350px;
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+    position: relative;
+    height: 700px;
+}
+.contact-page__info h1{
+    font-size: 48px;
+    position: absolute;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    width: 700px;
+    top: 0px;
+}
+.contact-page__info h3{
+    font-size: 16px;
+    margin-top: 80px ;
+}
+.contact-page__info-inputs{
+    font-family: 'Cera Pro Light';
+    padding: 40px 20px;
+}
+.contact-page__info-inputs-item{
+    display: flex;
+    gap: 15px;
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+    padding: 20px 0;
+}
+.contact-page__info-inputs-item img{
+    width: 20px;
+    height: 20px;
+}
+.contact-page__info-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contact-page__inputs{
+    margin: 100px 50px;
+    font-family: 'Cera Pro Medium';
+    font-weight: normal;
+}
+.contact-page__inputs-grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+}
+.contact-page__inputs-grid__label-order{
+    display: flex;
+    flex-direction: column;
+}
+#first{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #313131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+#email{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #313131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+#last{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #313131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+#phone{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #313131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+.contact-page__inputs-services{
+    padding: 40px 0;
+    font-family: 'Cera Pro Light';
+}
+.contact-page__inputs-services__item{
+    display: inline;
+    padding-right: 10px;
+}
+.contact-page__inputs-services h3{
+    padding: 20px 0;
+    font-family: 'Cera Pro';
+}
+#closet{
+    font-family: 'Cera Pro Light';
+    font-weight: normal;
+}
+.contact-page__button{
+    background-color: #fff;
+    display: inline-block;
+    width: 300px;
+    padding: 10px 40px;
+    text-align: center;
+    color: #313131;
+    border-radius: 50px;
+    border: 1px solid #313131;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Cera Pro Medium', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.contact-page__inputs-message{
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    padding: 12px 0;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    color: #313131;
+    display: flex;
+    flex-direction: column;
+}
+#message{
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border: 1px solid #313131;
+    box-sizing: border-box;
+    color: #313131;
+    border-radius: 12px;
+}
