@@ -5,6 +5,141 @@
   font-weight: normal;
   color: #313131; }
 
+.font-caption, .hero__tittle-small {
+  font-family: 'Cera Pro';
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em; }
+
+.font-body, .objective__text p {
+  font-family: 'Cera Pro Light';
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em; }
+
+.font-body-strong {
+  font-family: 'Cera Pro Medium';
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05em; }
+
+.font-button, .hero__contact-button, .objective__text-button {
+  font-family: 'Cera Pro';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+
+.font-body-large {
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px; }
+
+.font-subtext-caps, .hero__subtitle {
+  font-family: 'Cera Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+
+.font-subtext {
+  font-family: 'Cera Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.15em; }
+
+.font-subtitle, .hero__tittle-medium {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em; }
+
+.font-title, .hero__tittle-large {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.05em; }
+
+.font-section-title, .value__title-1 {
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 0.05em; }
+
+.font-section-title-strong {
+  font-family: 'Cera Pro Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0.05em; }
+
+.font-secondary-title {
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.05em; }
+
+.font-title-caps, .objective__text h2 {
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+.font-title-caps-medium {
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+.font-title-caps-large {
+  font-family: 'Cera Pro Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+
+.font-title-special, .value__title-2 {
+  font-family: 'Halbrein';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px; }
+
+.sm-instagram {
+  padding: 0 25px;
+  width: 22px;
+  height: 22px;
+  color: white; }
+  .sm-instagram:hover {
+    color: #c92d8f; }
+
+.sm-facebook {
+  padding: 0 25px;
+  width: 22px;
+  height: 22px;
+  color: white; }
+  .sm-facebook:hover {
+    color: #2279e4; }
+
+.sm-youtube {
+  padding: 0 25px;
+  width: 22px;
+  height: 22px;
+  color: white; }
+  .sm-youtube:hover {
+    color: #c4302b; }
+
 /* Header */
 .header {
   position: sticky;
@@ -196,21 +331,6 @@ a:hover {
   font-weight: normal;
   color: #fff; }
 
-.socialmedia__icons-1 {
-  padding: 0 25px;
-  width: 22px;
-  height: 22px; }
-
-.socialmedia__icons-2 {
-  padding: 0 25px;
-  width: 22px;
-  height: 22px; }
-
-.socialmedia__icons-3 {
-  padding: 0 25px;
-  width: 22px;
-  height: 22px; }
-
 @media (max-width: 1024px) {
   .footer {
     padding: 20px; }
@@ -300,7 +420,6 @@ a:hover {
 
 /* Hero */
 .hero {
-  /* background-color: rgb(210, 208, 207); */
   padding: 10px 60px;
   height: 700px;
   top: 0;
@@ -385,18 +504,6 @@ a:hover {
     left: 120px;
     z-index: 1;
     top: 200px; }
-    .hero__tittle-large {
-      font-size: 64px;
-      font-family: 'Cera Pro';
-      font-weight: bold; }
-    .hero__tittle-medium {
-      font-size: 36px;
-      font-family: 'Cera Pro';
-      font-weight: normal; }
-    .hero__tittle-small {
-      font-size: 12px;
-      font-family: 'Cera Pro';
-      font-weight: normal; }
   .hero__contact {
     position: absolute;
     right: 150px;
@@ -405,13 +512,10 @@ a:hover {
     .hero__contact-button {
       padding: 0;
       border: none;
-      background: none;
-      font-family: 'Cera Pro Medium', sans-serif; }
+      background: none; }
   .hero__subtitle {
     text-align: center;
-    padding: 50px;
-    font-family: 'Cera Pro Medium';
-    letter-spacing: 3px; }
+    padding: 50px; }
 
 @keyframes moveup {
   from {
@@ -438,16 +542,10 @@ a:hover {
   text-align: center; }
   .value__title-1 {
     text-align: left;
-    width: 540px;
-    margin: 10px auto;
-    font-family: 'Cera Pro Light';
-    font-size: 36px;
-    font-weight: normal; }
+    width: 600px;
+    margin: 10px auto; }
   .value__title-2 {
     text-align: center;
-    font-size: 80px;
-    font-family: 'Halbrein';
-    font-weight: normal;
     animation: slide_up 3s ease; }
 
 /* OBJECTIVE */
@@ -455,45 +553,32 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  padding: 20px 20px 80px 20px;
-  column-gap: 50px; }
+  column-gap: 100px;
+  padding: 20px 20px 80px 20px; }
   .objective__img {
     justify-self: right;
     max-width: 460px;
     width: 100%; }
   .objective__text {
-    margin: auto;
-    left: 0; }
+    margin: auto 0; }
     .objective__text h2 {
-      max-width: 400px;
+      max-width: 450px;
       width: 100%;
-      padding: 20px 0 10px 0;
-      font-family: 'Cera Pro Light', sans-serif;
-      font-size: 36px;
-      font-weight: normal; }
+      padding: 20px 0 10px 0; }
     .objective__text p {
       max-width: 400px;
       width: 100%;
-      padding: 10px 0 20px 0;
-      font-family: 'Cera Pro Light', sans-serif;
-      font-size: 16px;
-      font-weight: normal;
-      letter-spacing: 1px; }
+      padding: 10px 0 20px 0; }
     .objective__text-button {
       background-color: #fff;
       display: inline-block;
-      width: 70%;
+      width: 40%;
       padding: 10px 10px;
       text-align: center;
       color: #313131;
       border-radius: 50px;
       border: 1px solid #313131;
       cursor: pointer;
-      font-weight: normal;
-      font-size: 14px;
-      font-family: 'Cera Pro Medium', sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
       margin: 10px 0; }
 
 @media (max-width: 1400px) {
@@ -944,8 +1029,9 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
-  gap: 80px;
-  margin: 100px; }
+  column-gap: 100px;
+  margin: 100px;
+  justify-content: center; }
 
 .about-services__text {
   font-family: 'Cera Pro Medium';

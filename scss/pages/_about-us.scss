@@ -48,11 +48,12 @@
     padding: 30px;
 }
 .about-services{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-    gap: 80px;
+    @include templategrid(2,auto);
     margin: 100px;
+    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(2, auto);
+    // gap: 80px;
 }
 .about-services__text{
     font-family: 'Cera Pro Medium';

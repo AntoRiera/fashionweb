@@ -5,3 +5,144 @@
     font-weight: normal;
     color: $black;
 }
+
+// extend
+.font-caption{
+    font-family: 'Cera Pro';
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+.font-body{
+    font-family: 'Cera Pro Light';
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.font-body-strong{
+    font-family: 'Cera Pro Medium';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+.font-button{
+    font-family: 'Cera Pro';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.font-body-large{
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+.font-subtext-caps{
+    font-family: 'Cera Pro Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.font-subtext{
+    font-family: 'Cera Pro Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+}
+.font-subtitle{
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+}
+.font-title{
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 0.05em;
+}
+.font-section-title{
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+}
+.font-section-title-strong{
+    font-family: 'Cera Pro Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+}
+.font-secondary-title{
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+}
+.font-title-caps{
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.font-title-caps-medium{
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.font-title-caps-large{
+    font-family: 'Cera Pro Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.font-title-special{
+    font-family: 'Halbrein';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+// Mixins
+@mixin templategrid ($columns, $size) {
+    display: grid;
+    grid-template-columns: repeat($columns, $size);
+    justify-content: center;
+    column-gap: 100px;
+}
+
+// maps
+$iconSocialMedia: (
+    instagram: #c92d8f,
+    facebook: #2279e4,
+    youtube: #c4302b,
+);
+// buble
+@each $nameSocialMedia, $colorIcon in $iconSocialMedia{
+    .sm-#{$nameSocialMedia} {
+        padding: 0 25px;
+        width: 22px;
+        height: 22px;
+        color: white;
+
+        &:hover {
+            color: $colorIcon;
+        }
+    }
+}
