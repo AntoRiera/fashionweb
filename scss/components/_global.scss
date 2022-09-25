@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: normal;
-    color: $black;
+    // font-weight: normal;
+    // color: $black;
 }
 
 // extend
@@ -133,12 +133,11 @@ $iconSocialMedia: (
     facebook: #2279e4,
     youtube: #c4302b,
 );
-// buble
-@each $nameSocialMedia, $colorIcon in $iconSocialMedia{
-    .sm-#{$nameSocialMedia} {
+// bucle
+@each $namesocialmedia, $colorIcon in $iconSocialMedia{
+    .sm-#{$namesocialmedia} {
         padding: 0 25px;
-        width: 22px;
-        height: 22px;
+        font-size: 22px;
         color: white;
 
         &:hover {
