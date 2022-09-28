@@ -3,85 +3,88 @@
     justify-content: center;
     padding: 80px;
     gap: 100px;
+    &__text{
+        margin-left: 100px;
+        width: 450px;
+        font-family: 'Cera Pro Light';
+        font-weight: normal;
+        & h2{
+            font-size: 48px;
+            letter-spacing: 5%;
+            font-weight: normal;
+            padding-bottom: 20px;
+        }
+        & p{
+            padding: 10px 0;
+            letter-spacing: 0.5%;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 170%;
+        }
+        &-button{
+            background-color: #fff;
+            display: inline-block;
+            width: auto;
+            padding: 10px 40px;
+            text-align: center;
+            color: #313131;
+            border-radius: 50px;
+            border: 1px solid #313131;
+            cursor: pointer;
+            font-weight: normal;
+            font-size: 14px;
+            font-family: 'Cera Pro Medium', sans-serif;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin: 40px 0;
+        }
+    }
+    &__images{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 700px;
+        gap: 40px;
+        &-1{
+            max-width: 150px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-2{
+            max-width: 500px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
-.tendency-hero__text{
-    margin-left: 100px;
-    width: 450px;
-    font-family: 'Cera Pro Light';
-    font-weight: normal;
-}
-.tendency-hero__text h2{
-    font-size: 48px;
-    letter-spacing: 5%;
-    font-weight: normal;
-    padding-bottom: 20px;
-}
-.tendency-hero__text p{
-    padding: 10px 0;
-    letter-spacing: 0.5%;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 170%;
-}
-.tendency-hero__text-button{
-    background-color: #fff;
-    display: inline-block;
-    width: auto;
-    padding: 10px 40px;
-    text-align: center;
-    color: #313131;
-    border-radius: 50px;
-    border: 1px solid #313131;
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 14px;
-    font-family: 'Cera Pro Medium', sans-serif;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 40px 0;
-}
-.tendency-hero__images{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 700px;
-    gap: 40px;
-}
-.tendency-hero__images-1{
-    max-width: 150px;
-    width: 100%;
-    object-fit: cover;
-}
-.tendency-hero__images-2{
-    max-width: 500px;
-    width: 100%;
-    object-fit: cover;
-}
+
 .tendency-moodboard{
     object-fit: cover;
+    & img{
+        max-width: 1400px;
+        width: 100%;
+        height: 100%;
+        background-color: #F3EEE8;
+        object-fit: cover;
+    }
 }
-.tendency-moodboard img{
-    max-width: 1400px;
-    width: 100%;
-    height: 100%;
-    background-color: #F3EEE8;
-    object-fit: cover;
-}
+
 .tendencyarticletext{
     text-align: center;
     font-family: 'Cera Pro Light';
     font-weight: normal;
     padding: 40px;
+    & h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding: 10px;
+    }
+    & h3{
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
 }
-.tendencyarticletext h2{
-    font-size: 30px;
-    letter-spacing: 3px;
-    padding: 10px;
-}
-.tendencyarticletext h3{
-    font-size: 18px;
-    letter-spacing: 2px;
-    padding: 10px;
-}
+
 .tendencyarticle{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
@@ -91,41 +94,51 @@
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    // height: 350px;
     padding: 50px;
+    &__card{
+        display: grid;
+        grid-template-columns: 100px auto;
+        font-family: 'Cera Pro Light';
+        font-weight: normal;
+        max-width: 400px;
+        margin: 0 auto;
+        height: 100px;
+        gap: 30px;
+        align-items: center;
+        text-align: left;
+        &-title{
+            padding-bottom: 10px;
+            font-weight: normal;
+        }
+        &-subtitle{
+            line-height: 1.5;
+            font-weight: normal;
+            width: 300px;
+        }
+        &-image{
+            width: 100px;
+        }
+    }
 }
-.tendencyarticle__card{
-    display: grid;
-    grid-template-columns: 100px auto;
-    font-family: 'Cera Pro Light';
-    font-weight: normal;
-    max-width: 400px;
-    margin: 0 auto;
-    height: 100px;
-    gap: 30px;
-    align-items: center;
-    text-align: left;
-}
-.tendencyarticle__card-title{
-    padding-bottom: 10px;
-    font-weight: normal;
-}
-.tendencyarticle__card-subtitle{
-    line-height: 1.5;
-    font-weight: normal;
-    width: 300px;
-}
-.tendencyarticle__card-image{
-    width: 100px;
-}
+
 .tendency-profiles{
     font-family: 'Cera Pro Light';
     font-weight: normal;
     margin: 30px 20px 80px;
-}
-.tendency-profiles h2{
-    font-size: 20px;
-    padding: 20px 20px 20px 260px;
+    & h2{
+        font-size: 20px;
+        padding: 20px 20px 20px 260px;
+    }
+    &__arrow{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(2 , auto);
+    }
 }
 .tendedncy-profiles__influencers{
     display: grid;
@@ -133,16 +146,6 @@
     justify-items: center;
     align-items: center;
     gap: 20px;
-}
-.tendedncy-profiles__arrow{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-}
-.tendency-profiles__row{
-    display: grid;
-    grid-template-columns: repeat(2 , auto);
 }
 
 // Medias queries
