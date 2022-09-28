@@ -1,20 +1,18 @@
 .about-hero{
     margin: 50px;
-    /* max-height: 840px; */
 }
 .about-hero__img{
     text-align: center;
-
-    /* max-height: 840px;
-    height: auto; */
-
+    max-width: 620px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
 }
 .about-hero__img img{
     max-width: 620px;
     width: 100%;
+    height: 848px;
     object-fit: cover;
 }
 .about-hero__text{
@@ -25,9 +23,7 @@
     font-family: 'Cera Pro Light';
 }
 .about-hero__text h1{
-    font-size: 44px;
-    letter-spacing: 6px;
-    font-weight: normal;
+    @extend .font-title-caps-medium;
     padding: 10px 0;
 }
 .about-hero__text h3{
@@ -44,16 +40,16 @@
     z-index: 1;
     bottom: 100px;
     font-family: 'Cera Pro Light';
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     padding: 30px;
 }
 .about-services{
-    @include templategrid(2,auto);
     margin: 100px;
     justify-content: center;
-    // display: grid;
-    // grid-template-columns: repeat(2, auto);
-    // gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
 }
 .about-services__text{
     font-family: 'Cera Pro Medium';
@@ -77,7 +73,7 @@
     padding: 20px 0;
 }
 .about-services__text-list__item h4{
-    width: 450px;
+    width: 460px;
 }
 .about-services__text-list__item img{
     width: 20px;
@@ -100,6 +96,131 @@
     letter-spacing: 1px;
 }
 .about-services__image{
-    width: auto;
-    padding: 100px 0;
+    object-fit: cover;
+    height: 80%;
+    max-width: 800px;
+    width: 100%;
+    margin: 100px 0;
+}
+
+
+// Medias queries
+@media (max-width: 1400px){
+    .about-hero__text{
+        left: 80px;
+        width: 400px;
+    }
+    .about-hero__text h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 1024px){
+    .about-hero__text{
+        left: 50px;
+    }
+    .about-hero__text h3{
+        width: 300px;
+    }
+    .about-services{
+        gap: 20px;
+    }
+    .about-services__text{
+        width: 350px;
+    }
+    .about-services__text-list__item{
+        max-width: 300px;
+        width: 100%;
+    }
+    .about-services__image{
+        height: 484px;
+    }
+}
+@media(max-width:768px){
+    .about-hero__text{
+        left: 100px;
+        top: 170px;
+    }
+    .about-hero__subtitle{
+        left: 0; 
+        right: 0; 
+        margin: auto;
+        bottom: 80px;
+    }
+    .about-services__text h2{
+        font-size: 48px;
+    }
+    .about-services__text h3{
+        font-size: 26px;
+    }
+    .about-services{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .about-services__text{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about-services__text-list__item{
+        margin: 0 auto;
+        max-width: 450px;
+        width: 100%;
+        text-align: left;
+    }
+    .about-services__image{
+        margin: 0;
+    }
+}
+@media(max-width:600px){
+    .about-hero__text{
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 170px;
+    }
+    .about-hero__text h1{
+        font-size: 34px;
+    }
+    .about-hero__text h3{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    }
+    .about-hero__subtitle{
+        width: 340px;
+        bottom: 30px;
+    }
+    .about-services__text-list__item{
+        max-width: 350px;
+    }
+    .about-services__text h2{
+        font-size: 42px;
+    }
+    .about-services__text h3{
+        font-size: 20px;
+    }
+}
+@media(max-width:400px){
+    .about-hero__text h1{
+        font-size: 26px;
+    }
+    .about-hero__text h3{
+        max-width: 250px;
+    }
+    .about-hero__subtitle{
+        max-width: 240px;
+        bottom: 15px;
+    }
+    .about-services__text h2{
+        font-size: 38px;
+    }
+
+    .about-services__image{
+        max-width: 350px;
+    }
 }

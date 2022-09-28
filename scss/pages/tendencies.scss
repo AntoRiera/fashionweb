@@ -42,13 +42,29 @@
 }
 .tendency-hero__images{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     width: 700px;
     gap: 40px;
 }
+.tendency-hero__images-1{
+    max-width: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.tendency-hero__images-2{
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+}
 .tendency-moodboard{
+    object-fit: cover;
+}
+.tendency-moodboard img{
+    max-width: 1400px;
+    width: 100%;
+    height: 100%;
     background-color: #F3EEE8;
-    text-align: center;
+    object-fit: cover;
 }
 .tendencyarticletext{
     text-align: center;
@@ -75,7 +91,7 @@
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    height: 350px;
+    // height: 350px;
     padding: 50px;
 }
 .tendencyarticle__card{
@@ -127,4 +143,72 @@
 .tendency-profiles__row{
     display: grid;
     grid-template-columns: repeat(2 , auto);
+}
+
+// Medias queries
+@media (max-width: 1400px){
+    .tendency-hero__images{
+        grid-template-columns: 1fr;
+    }
+    .tendency-hero__images-1{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .tendency-hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 30px;
+    }
+    .tendency-hero__text {
+        max-width: 700px;  
+        width: 100%;
+        margin-left: 0;  
+        margin: 0 auto;
+        order: 2;
+    }
+    .tendency-hero__images{
+        margin: 0 auto;
+        order: 1;
+    }
+    .tendency-hero__images-2{
+        margin: 0 auto;
+    }
+    .tendencyarticle__card-subtitle{
+        width: 200px;
+    }
+    .tendencyarticle{
+        column-gap: 60px;
+    }
+}
+
+@media(max-width:768px){
+    .tendencyarticle{
+        grid-template-columns: 1fr;
+    }
+    .tendency-profiles h2 {
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+     }
+    .tendedncy-profiles__influencers{
+        grid-template-columns: repeat(2 , 1fr);
+        margin: 0 auto;
+    }
+    .tendedncy-profiles__arrow{
+        display: none;
+    }
+    .tendency-profiles__row{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+}
+
+@media(max-width:400px){
+
 }

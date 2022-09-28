@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> D&D Design </title>
+    <meta name="description" content="Get your unique & aesthetic look for every occassion, start today with us! Receive looks personalized to your style and budget. 100% personalized">
+    <title> Style Design - Create aesthetic outfits  </title>
+    <link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="myHeader">
         <div class="header__content">
             <div class="header__content-logo">
                 <h3>
@@ -17,28 +22,34 @@
                     </a> -->
                     <a href="../index.html">logo</a>
                 </h3>
-                <a href="#">
-                    <img src="../assets/icons/Hamburger_LG.svg" alt="menu">
-                </a>
             </div>
             <nav>
                 <ul class="header__content-navbar">
                     <li>
-                        <a href="../pages/must-have.html">Must Have</a>
+                        <a href="./must-have.html">Must Have</a>
                     </li>
                     <li>
-                        <a href="../pages/tendencies.html">Tendencies</a>
+                        <a href="./tendencies.html">Tendencies</a>
                     </li>
                     <li>
-                        <a href="../pages/about-us.html">About Us</a>
+                        <a href="./about-us.html">About Us</a>
                      </li>
                      <li>
-                         <a href="../pages/contact-us.html">Contact Us</a>
+                         <a href="./contact-us.html">Contact Us</a>
                      </li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
              </nav>
              <button class="header__button">
-                <a href="../pages/log-in-register.html"> Log In </a>
+                <a href="./pages/log-in-register.html">
+                    <span class="full-text">Log In | Register</span>
+                    <span class="short-text">Log In</span>
+                </a>
+
             </button>
         </div>
    </header>
@@ -52,13 +63,13 @@
             <button class="tendency-hero__text-button" >READ MORE</button>
         </div>
         <div class="tendency-hero__images">
-            <img src="../assets/image/photographs.jpg" alt="Fashion photos" width="150px"> 
-            <img src="../assets/image/tendencies.jpg" alt="Tendencies article" width="500px">
+            <img src="../assets/image/photographs.jpg" alt="Fashion photos" width="150px" class="tendency-hero__images-1"> 
+            <img src="../assets/image/tendencies.jpg" alt="Tendencies article" width="500px" class="tendency-hero__images-2">
         </div>
     </section>
     <!-- moodboard and inspiration -->
     <section class="tendency-moodboard">
-        <img src="../assets/image/moodboard.png" alt="moodboard fashion" width="1400 px">
+        <img src="../assets/image/moodboard.png" alt="moodboard fashion">
     </section>
     <!-- Articles section -->
     <section class="tendencyarticletext">
@@ -145,8 +156,8 @@
             <div class="footer__info">
                 <div class="footer__info-contact">
                     <div class="footer__info-logo">
-                        <a href="../index.html"> 
-                            <img src="../assets/image/logo.jpg" alt="Logo image" width="50px"/>
+                        <a href="./index.html"> 
+                            <img src="./assets/image/logo.jpg" alt="Logo image" width="50px"/>
                         </a>
                     </div>
                     <h4>OUR CONTACTS</h4>
@@ -164,19 +175,16 @@
                 <input type="text"placeholder="- Suscribe to our newsletter" class="socialmedia__suscribe-email"/>
             </div>
             <div class="socialmedia__icons">
-                    <a href="#" class="sm__instagram">
-                        <img src="../assets/icons/insta white.png" alt="instagram">
-                    </a>
-                    <a href="#" class="sm__facebook">
-                        <img src="../assets/icons/fb white.png" alt="facebook">
-                    </a>
-                    <a href="#" class="sm__youtube">
-                        <img src="../assets/icons/yt white.png" alt="youtube">
-                    </a>
+                 <a href="" class="sm-instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="sm-facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="sm-youtube"><i class="bi bi-youtube"></i></a>
                 <h5>- follow us on social media </h5>
             </div>
        </section>
     </div>
    </footer>
+   <script src="./js/wow.min.js"></script>
+   <script>new WOW().init();</script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
