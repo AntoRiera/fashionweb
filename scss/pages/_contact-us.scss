@@ -5,7 +5,10 @@
     height: auto;
 }
 .contact-page__info{
-    background-color: #aeaeae;
+    background: 
+    radial-gradient(450px at 450px 300px, #CC7EF0 0%, rgba(210, 137, 244, 0.767708) 41.98%, rgba(229, 174, 255, 0) 100%), 
+    radial-gradient(500px at 200px 350px, rgb(59, 0, 98) 0.28%, rgba(229, 174, 255, 0) 100%), 
+    radial-gradient(400px at 200px 550px, #7829d8 0.28%, rgba(204, 226, 70, 0) 100%);
     padding: 40px;
     max-width: 560px;
     min-width: 350px;
@@ -13,6 +16,7 @@
     font-weight: normal;
     position: relative;
     height: 700px;
+    justify-content: end;
 }
 .contact-page__info h1{
     font-size: 48px;
@@ -25,6 +29,9 @@
 .contact-page__info h3{
     font-size: 16px;
     margin-top: 80px ;
+    width: 320px;
+    color: #fff;
+    font-weight: normal;
 }
 .contact-page__info-inputs{
     font-family: 'Cera Pro Light';
@@ -36,6 +43,10 @@
     font-family: 'Cera Pro Light';
     font-weight: normal;
     padding: 20px 0;
+}
+.contact-page__info-inputs-item h4{
+    color: #fff;
+    font-weight: normal;
 }
 .contact-page__info-inputs-item img{
     width: 20px;
@@ -219,6 +230,15 @@
         grid-template-columns: 1fr;
         margin: 20px 10px;
         justify-content: center;
+    }
+    .contact-page__info{
+        background: #fff;
+    }
+    .contact-page__info h3{
+        color: #313131;
+    }
+    .contact-page__info h4{
+        color: #313131;
     }
     .contact-page__inputs-grid{
         display: grid;
