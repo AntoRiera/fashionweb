@@ -11,20 +11,15 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="" href="../js/carousel_must_have/must-have-carousel.js">
 </head>
 <body>
     <header class="header" id="myHeader">
         <div class="header__content">
             <div class="header__content-logo">
-                <h3>
-                    <!-- <a href="./index.html"> 
-                        <img src="./assets/image/logo.jpg" alt="Logo image" width="40%"/>
-                    </a> -->
-                    <a href="../index.html">logo</a>
-                </h3>
-                <!-- <a href="#">
-                    <img src="./assets/icons/Hamburger_LG.svg" alt="menu">
-                </a> -->
+                <a href="../index.html">
+                    <img src="../assets/icons/logo.svg" alt="logo">
+                </a>
             </div>
             <nav>
                 <ul class="header__content-navbar">
@@ -46,9 +41,6 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="bi bi-list"></i>
-                </a> -->
              </nav>
              <button class="header__button">
                 <a href="./pages/log-in-register.html">
@@ -67,28 +59,100 @@
                 <h2>- & which items are indespensable</h2>
             </div>
             <div class="must-hero__img">
-                <img src="../assets/image/clothes.jpg" alt="clothes" width="1000px">
+                <img class="must-hero__img3" src="../assets/image/must have img.png" alt="clothes">
+                <img class="must-hero__img2" src="../assets/image/must have 2.png" alt="clothes 2">
+                <img class="must-hero__img1" src="../assets/image/must have 1.png" alt="clothes 1">
             </div>
             <div class="must-hero__subtitle">
                 <h3>GET A SNEAK PEEK OF HOW YOU CAN CREATE YOUR STYLE</h3>
                 <h4>- Basics that elevate your look</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit eu diam odio eget in egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit eu diam odio eget in egestas.</p>
+                <p>Getting together different outfits for each occassion it's not easy thing, that's why having basic items in your wardrope that you are able to mix and match. Create your own by using our web!</p>
             </div>
         </section>
         <!-- Section looks -->
         <section class="must-look">
             <div class="must-look__title">
                 <h6 style="color: white">2017 - 2022</h6>
-                <h2>COMBINE <span style="color: white">& CREATE NEW STYLES</span></h2>
+                <h2>COMBINE <span>& CREATE NEW STYLES</span></h2>
             </div>
             <div class="must-have__subtitle">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit eu diam</h3>
+                <h3> <span>All outfits could be cre</span> ated with the combination of <span>just some bas</span>  ic items from your wardrope</h3>
+            </div>
+            <div class="must-look__carousel">
+                <div class="column-carousel1">
+                    <div class="must-look__carousel-button">
+                        <div class="must-look__carousel-button1">
+                            <button onclick="plusDivs2(-1)"&#10094;> 
+                                <img src="../assets/icons/Arrow_Left_MD.svg" alt="">
+                            </button>
+                        </div>    
+                        <div class="must-look__carousel-button2">
+                            <button onclick="plusDivs2(+1)"&#10094;>
+                                <img src="../assets/icons/Arrow_Right_MD black.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line2"></div>
+                </div>
+                <div class="column-carousel2">
+                    <div class="must-look__carousel-img">
+                        <div class="carousel-1">
+                            <img class="carousel" src="../assets/image/carousel/model 3.png" alt="">
+                            <img class="carousel" src="../assets/image/carousel/model 6.png" alt="">
+                            <img class="carousel" src="../assets/image/carousel/model 9.png" alt="">
+                            <img class="carousel" src="../assets/image/carousel/model 12.png" alt="">
+                            <img class="carousel" src="../assets/image/carousel/model 15.png" alt="">
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <img class="carousel2" src="../assets/image/carousel/model 2.png" alt="">
+                            <img class="carousel2" src="../assets/image/carousel/model 5.png" alt="">
+                            <img class="carousel2" src="../assets/image/carousel/model 8.png" alt="">
+                            <img class="carousel2" src="../assets/image/carousel/model 11.png" alt="">
+                            <img class="carousel2" src="../assets/image/carousel/model 14.png" alt="">
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <img class="carousel3" src="../assets/image/carousel/model 1.png" alt="">
+                            <img class="carousel3" src="../assets/image/carousel/model 4.png" alt="">
+                            <img class="carousel3" src="../assets/image/carousel/model 7.png" alt="">
+                            <img class="carousel3" src="../assets/image/carousel/model 10.png" alt="">
+                            <img class="carousel3" src="../assets/image/carousel/model 13.png" alt="">
+                        </div>
+                        <div class="rectangle"></div>
+                    </div>
+                </div>
+                <div class="column-carousel3">
+                    <div class="arrow1">
+                        <div class="must-look__carousel-button2">
+                            <button onclick="plusDivs(-1)"&#10094;>
+                                <img src="../assets/icons/Arrow_Right_MD.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="must-look__carousel-button1">
+                            <button onclick="plusDivs(+1)"&#10094;>
+                                <img src="../assets/icons/Arrow_Left_MD white.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line3"></div>
+                    <div class="line4"></div>
+                    <div class="arrow3">
+                        <div class="must-look__carousel-button2">
+                            <button onclick="plusDivs3(-1)"&#10094;>
+                                <img src="../assets/icons/Arrow_Right_MD.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="must-look__carousel-button1">
+                            <button onclick="plusDivs3(+1)"&#10094;>
+                                <img src="../assets/icons/Arrow_Left_MD white.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="rectangle"></div> -->
             </div>
 
-
-            
-            <button>Back</button>
-            <button>Next</button>
             <button class="must-look__button">START STYLING PROCESS</button>
         </section>
    </main>
@@ -129,5 +193,6 @@
    <script src="./js/wow.min.js"></script>
    <script>new WOW().init();</script>
     <script src="/js/script.js"></script>
+    <script src="../js/carousel_must_have/must-have-carousel.js"></script>
 </body>
 </html>

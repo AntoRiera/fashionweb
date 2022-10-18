@@ -17,13 +17,10 @@
     align-items: center;
 }
 .header__content-logo{
-    display: flex;
     width: 124px;
     justify-content: center;
-}
-.header__content-logo img{
-    display: none;
-    padding: 0 15px;
+    margin-left: 40px;
+    padding-top: 10px;
 }
 .header__content-navbar{
     display: flex;
